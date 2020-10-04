@@ -1,0 +1,31 @@
+const {  MessageEmbed } = require("discord.js");
+
+
+module.exports.run = async(client, message, args) => {
+
+
+    message.channel.startTyping()
+
+
+ let perms = message.member.hasPermission("ADMINISTRATOR") 
+        if (!perms)    return message.channel.send("X | No tienes permisos")
+        let canal = message.mentions.channels.first()
+
+        if(!canal) return message.channel.send("Te falto mencionar el canal")
+        let tiene = interchat.tiene("array")
+        if(tiene === false) return interchat.establecer("array", [`${canal.id}`])
+        
+      
+          interchat.push("array", canal.id)
+        
+      
+          message.channel.send("Canal establecido con exito")
+
+
+    message.channel.stopTyping()
+}
+
+module.exports.help = {
+    name: "setInterchat",
+    aliases: [""]
+  }
