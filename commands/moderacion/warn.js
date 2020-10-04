@@ -1,12 +1,12 @@
 const {  MessageEmbed } = require("discord.js");
 
-const db1 = require('megadb')
-let servers = new db1.crearDB('servers');
-const db = require("quick.db")
+//const db1 = require('megadb')
+//let servers = new db1.crearDB('servers');
+//const db = require("quick.db")
 
 module.exports.run = async(client, message, args) => {
 
-
+return message.chanel.send("En mantenimiento")
     message.channel.startTyping()
 
   if(!message.member.hasPermission("ADMINISTRATOR")) {

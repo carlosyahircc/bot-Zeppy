@@ -1,10 +1,10 @@
 const {  MessageEmbed } = require("discord.js");
-const db = require("quick.db")
+//const db = require("quick.db")
 
 
 module.exports.run = async(client, message, args) => {
 
-
+return message.channel.send("en mantenimiento")
    if(!message.member.hasPermission("ADMINISTRATOR")) {
             return message.channel.send("No tienes permiso")
           }

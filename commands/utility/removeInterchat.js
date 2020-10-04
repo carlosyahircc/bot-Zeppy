@@ -21,5 +21,5 @@ message.channel.send("Canal eliminado con exito")
 
 module.exports.help = {
     name: "removeInterchat",
-    aliases: [""]
+    aliases: []
   }
